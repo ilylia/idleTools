@@ -9,7 +9,7 @@ function IsLerserEquip(data) {
     if (data.DmgMaxPlus != null) DmgMax += Number(data.DmgMaxPlus);
     if (DmgMax > 110) return false;
 
-    if (data.DmgPer != null && Number(data.DmgPer) > 15) return false;
+    if (data.DmgPer != null && Number(data.DmgPer) > 20) return false;
     if (data.DmgLvl != null) return false;
 
     var Def=0;
@@ -18,7 +18,7 @@ function IsLerserEquip(data) {
     if (data.DefPlus != null) Def += Number(data.DefPlus);
     if (Def > 700) return false;
 
-    if (data.DefPer != null && Number(data.DefPer) > 15) return false;
+    if (data.DefPer != null && Number(data.DefPer) > 80) return false;
     if (data.DefLvl != null) return false;
     
     return true;
